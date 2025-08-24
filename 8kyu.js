@@ -182,3 +182,29 @@ If one of the arguments is a number your code must coerce it into being a string
 function joinStrings(string1, string2){
    return`${string1} ${string2}`
 }
+
+// 8 kyu Calculate average
+// Write a function which calculates the average of the numbers in a given array.
+// Note: Empty arrays should return 0.
+function findAverage(array) {
+  return array.length>=1?array.reduce((acc,curr)=>acc+curr,0)/array.length:0;
+}
+
+// 8 kyu Do you speak "English"?
+// Given a string of arbitrary length with any ascii characters. Write a function to determine whether the string contains the whole word "English".
+
+// The order of characters is important -- a string "abcEnglishdef" is correct but "abcnEglishsef" is not correct.
+
+// Upper or lower case letter does not matter -- "eNglisH" is also correct.
+
+// Return value as boolean values, true for the string to contains "English", false for it does not.
+
+function spEng(sentence){
+return sentence.toLowerCase().includes("english");
+}
+
+// 8 kyu Simple multiplication
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+function simpleMultiplication(number) {
+   return number%2===0?number*8:number*9;
+}
