@@ -222,10 +222,10 @@ function cookie(x){
   return `Who ate the last cookie? ${typeof x==="string"?"It was Zach":typeof x==="number"?"It was Monica":"It was the dog"}!`
 }
 
-8 kyu Who is going to pay for the wall?
-Don Drumphet lives in a nice neighborhood, but one of his neighbors has started to let his house go. Don Drumphet wants to build a wall between his house and his neighbor’s, and is trying to get the neighborhood association to pay for it. He begins to solicit his neighbors to petition to get the association to build the wall. Unfortunately for Don Drumphet, he cannot read very well, has a very limited attention span, and can only remember two letters from each of his neighbors’ names. As he collects signatures, he insists that his neighbors keep truncating their names until two letters remain, and he can finally read them.
+// 8 kyu Who is going to pay for the wall?
+// Don Drumphet lives in a nice neighborhood, but one of his neighbors has started to let his house go. Don Drumphet wants to build a wall between his house and his neighbor’s, and is trying to get the neighborhood association to pay for it. He begins to solicit his neighbors to petition to get the association to build the wall. Unfortunately for Don Drumphet, he cannot read very well, has a very limited attention span, and can only remember two letters from each of his neighbors’ names. As he collects signatures, he insists that his neighbors keep truncating their names until two letters remain, and he can finally read them.
 
-Your code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is.
+// Your code will show Full name of the neighbor and the truncated version of the name as an array. If the number of the characters in name is less than or equal to two, it will return an array containing only the name as is.
 function whoIsPaying(name){
   
 let result=name.slice(0,2).split(" ");
@@ -243,3 +243,16 @@ return name.length>=3?
 function digitize(n) {
   return (n+"").split("").reverse().map(ele=>ele*1);
 }
+
+// 8 kyu Area or Perimeter
+// You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+// If it is a square, return its area. If it is a rectangle, return its perimeter.
+
+// Example(Input1, Input2 --> Output):
+
+// 6, 10 --> 32
+// 3, 3 --> 9
+// Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
+const areaOrPerimeter = function(l , w) {
+ return l===w?l*w:(2*l)+(2*w);
+};
