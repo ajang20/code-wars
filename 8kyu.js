@@ -256,3 +256,22 @@ function digitize(n) {
 const areaOrPerimeter = function(l , w) {
  return l===w?l*w:(2*l)+(2*w);
 };
+
+// 8 kyu Ensure question
+// Given a string, write a function that returns the string with a question mark ("?") appends to the end, unless the original string ends with a question mark, in which case, returns the original string.
+
+// For example (Input --> Output)
+
+// "Yes" --> "Yes?" 
+// "No?" --> "No?"
+function ensureQuestion(s) {
+  return s.endsWith("?")?s:`${s}?`;
+}
+
+// 8 kyu Merging sorted integer arrays (without duplicates)
+// Write a function that merges two sorted arrays into a single one. The arrays only contain integers. Also, the final outcome must be sorted and not have any duplicate.
+function mergeArrays(a, b) {
+  let newArr =  [...a,...b];
+  return [...new Set(newArr)].sort((a,b)=>a-b);
+}
+
