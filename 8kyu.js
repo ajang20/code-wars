@@ -275,3 +275,17 @@ function mergeArrays(a, b) {
   return [...new Set(newArr)].sort((a,b)=>a-b);
 }
 
+// 8 kyu You Can't Code Under Pressure #1'
+// Code as fast as you can! You need to double the integer and return it.
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i;
+}
+
+// 8 kyu Function 1 - hello world
+// Make a simple function called greet that returns the most-famous "hello world!".
+// Style Points
+// Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+function greet(){
+  return `hello world!`;
+}
