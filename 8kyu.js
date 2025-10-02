@@ -366,3 +366,30 @@ return longDate.split(" ").slice(0,3).join(" ").replace(/,/,"");
 function hexToDec(hexString){
 return parseInt(hexString,16);
   }
+
+//   8 kyu Parse nice int from char problem
+
+//   You ask a small girl "How old are you?" She always says "x years old", where x is a random number between 0 and 9.
+
+// Write a program that returns the girl's age (0-9) as an integer.
+
+// Assume the test input string is always a valid string. For example, the test input may be "1 year old" or "5 years old". The first character in the string is always a number.
+function getAge(inputString){
+return Number(inputString[0]);
+}
+
+8 kyu How good are you really?
+There was a test in your class and you passed it. Congratulations!
+
+But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+Return true if you're better, else false!
+
+Note:
+Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
+function betterThanAverage(classPoints, yourPoints) {
+  let result= classPoints.reduce((acc,curr)=>curr+acc,0)/classPoints.length;
+  return result<yourPoints?true:false;
+}
