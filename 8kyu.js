@@ -378,18 +378,35 @@ function getAge(inputString){
 return Number(inputString[0]);
 }
 
-8 kyu How good are you really?
-There was a test in your class and you passed it. Congratulations!
+// 8 kyu How good are you really?
+// There was a test in your class and you passed it. Congratulations!
 
-But you're an ambitious person. You want to know if you're better than the average student in your class.
+// But you're an ambitious person. You want to know if you're better than the average student in your class.
 
-You receive an array with your peers' test scores. Now calculate the average and compare your score!
+// You receive an array with your peers' test scores. Now calculate the average and compare your score!
 
-Return true if you're better, else false!
+// Return true if you're better, else false!
 
-Note:
-Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
+// Note:
+// Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
 function betterThanAverage(classPoints, yourPoints) {
   let result= classPoints.reduce((acc,curr)=>curr+acc,0)/classPoints.length;
   return result<yourPoints?true:false;
+}
+// 8 kyu  Keep Hydrated!
+// Nathan loves cycling.
+
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded down.
+
+// For example:
+
+// time = 3 ----> litres = 1
+
+// time = 6.7---> litres = 3
+
+// time = 11.8--> litres = 5
+function litres(time) {
+  return Math.floor(time*0.5);
 }
