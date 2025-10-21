@@ -426,38 +426,59 @@ function hello(name) {
   return !name?"Hello, World!" :`Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`;
 }
 
-// 8 kyu Quarter of the year
-// Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+// 7 kyu Leap Years
+// In this kata you should simply determine, whether a given year is a leap year or not. In case you don't know the rules, here they are:
 
-// For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; and month 11 (November), is part of the fourth quarter.
+// Years divisible by 4 are leap years,
+// but years divisible by 100 are not leap years,
+// but years divisible by 400 are leap years.
+// Tested years are in range 1600 ≤ year ≤ 4000.
 
-// Constraint:
+function isLeapYear(year) {
+  return year%4===0 && year%100!==0 || year%400===0? true:false;
+}
+// 8 kyu Grasshopper - Basic Function Fixer
+// Fix the function
+// I created this function to add five to any number that was passed in to it and return the new value. It doesn't throw any errors but it returns the wrong number.
 
-// 1 <= month <= 12
+// Can you help me fix the function?
 
-const quarterOf = (month) => {
- return month<=3?1:month<=6?2:month<=9?3:month<=12?4:false;
+function addFive(num) {
+  var total = num + 5;
+  return total;
 }
 
-// 8 kyu Check same case
-// Write a function that will check if two given characters are the same case.
+// 8 kyu Grasshopper - Debug
+// Debug celsius converter
+// Your friend is traveling abroad to the United States so he wrote a program to convert fahrenheit to celsius. Unfortunately his code has some bugs.
 
-// If either of the characters is not a letter, return -1
-// If both characters are the same case, return 1
-// If both characters are letters, but not the same case, return 0
-// Examples
-// 'a' and 'g' returns 1
+// Find the errors in the code to get the celsius converter working properly.
 
-// 'A' and 'C' returns 1
+// To convert fahrenheit to celsius:
 
-// 'b' and 'G' returns 0
+// celsius = (fahrenheit - 32) * (5/9)
+// Remember that typically temperatures in the current weather conditions are given in whole numbers. It is possible for temperature sensors to report temperatures with a higher accuracy such as to the nearest tenth. Instrument error though makes this sort of accuracy unreliable for many types of temperature measuring sensors.
 
-// 'B' and 'g' returns 0
+function weatherInfo (temp) {
+  let c = convertToCelsius(temp);
+  if (c <= 0){
+    return (c + " is freezing temperature");
+    }
+  else{
+    return (c + " is above freezing temperature");
+    }
+}
 
-// '0' and '?' returns -1
-function sameCase(a, b){
-  return typeof a!=="string" || typeof b!=="string" 
-  || !/[a-zA-Z]/.test(a) || !/[a-zA-Z]/.test(b)?-1:
-  a===a.toLowerCase() && b===b.toLowerCase() ||
-   a===a.toUpperCase() && b===b.toUpperCase()  ?1:0;
+function convertToCelsius (temperature) {
+  let celsius = (temperature - 32 ) * (5/9);
+  return celsius;
+}
+
+// 8 kyu Array plus array
+// I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+
+// P.S. Each array includes only integer numbers. Output is a number too.
+
+function arrayPlusArray(arr1, arr2) {
+  return [...arr1,...arr2].reduce((curr,next)=>curr+next,0); //something went wrong
 }
