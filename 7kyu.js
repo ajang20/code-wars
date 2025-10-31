@@ -306,3 +306,22 @@ return arr.filter((ele,i,arr)=>arr.indexOf(ele)===arr.lastIndexOf(ele)).reduce((
 function anArgument(...arg) {
 return arg.length===0?'You didn\'t give me any arguments.':arg.length===1?`You gave me ${arg.length} argument and it is "${arg[0]}".`:`You gave me ${arg.length} arguments and they are ${arg.slice(0,arg.length-1).map(ele=>`"${ele}"`).join(", ")} and "${arg[arg.length-1]}".`;
 }
+
+// 7 kyu Sum Array with different bases
+// You get an array of different numbers to sum up. But there is one problem, those numbers all have different bases. For example:
+
+// You get an array of numbers with their base as an input:
+
+// [["101",16],["7640",8],["1",9]]
+// The output should be the sum as an integer value with a base of 10, so according to the example this would be:
+
+// 4258
+
+// A few more examples:
+// [["101",2], ["10",8]] --> 13
+// [["ABC",16], ["11",2]] --> 2751
+// Bases can be between 2 and 36 (2<=base<=36)
+
+function sumItUp(numbersWithBases){
+  return numbersWithBases.reduce((sum,[num,base])=>sum+parseInt(num,base),0)
+}
