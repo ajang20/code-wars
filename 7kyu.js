@@ -327,7 +327,7 @@ function sumItUp(numbersWithBases){
 }
 
 
-7 kyu V A P O R C O D E
+// 7 kyu V A P O R C O D E
 // ASC Week 1 Challenge 4 (Medium #1)
 
 // Write a function that converts any sentence into a V A P O R W A V E sentence. a V A P O R W A V E sentence converts all the letters into uppercase, and adds 2 spaces between each letter (or special character) to create this V A P O R W A V E effect.
@@ -340,4 +340,31 @@ function sumItUp(numbersWithBases){
 
 function vaporcode(string) {
   return string.split(" ").map(ele=>ele.toUpperCase()).join("").split("").join("  ");
+}
+
+// 7 kyu Recycle!
+// You are having a BBQ, and after the BBQ you are left with some rubbish to recycle.
+
+// There are 3 recycling boxes: Red: Plastic, Green: Glass, Blue: Card.
+
+// You want to sort the rubbish according to the material and return the number of items in each box as an array (or a tuple in Python):
+
+// [plastic, glass, card]
+// The material type can be determined based on the sign of the item's value:
+
+// Plastic: value > 0
+// Glass: value < 0
+// Card: value = 0
+// Example
+// rubbish = [5, -9, 0, 6, -84, -95, 15]
+// // Plastic = 3, Glass = 3, Card = 1
+// // Output: [3, 3, 1]
+
+function recycleMe(recycle){ 
+  
+  const plastic= recycle.filter(ele=>ele>0);
+  const Glass= recycle.filter(ele=>ele<0);
+  const Card= recycle.filter(ele=>ele===0);
+  
+return [plastic.length,Glass.length,Card.length];
 }
