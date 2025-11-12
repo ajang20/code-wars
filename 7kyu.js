@@ -428,3 +428,16 @@ function isKiss( words ){
 function descendingOrder(n){
   return (n+"").split("").map(ele=>ele*1).sort((a,b)=>b-a).map(ele=>ele+"").join("")*1;
 }
+
+
+// 7 kyu Only one
+// Task: Write function only_one which return True if ONLY ONE of the boolean flag is True, otherwise return False. If there are no boolean flag, return False
+
+//   onlyOne() --> false
+//   onlyOne(true, false, false) --> true
+//   onlyOne(true, false, false, true) --> false
+//   onlyOne(false, false, false, false) --> false  
+function onlyOne(...arg) {
+  let bool = arg.filter(ele=>ele===true)
+  return bool.length===1?true:false;
+}
