@@ -16,3 +16,4 @@ function duplicateCount(text){
 let arr = [...text]
 return [...new Set(arr.map(ele=>ele.toLowerCase()).filter((ele,i)=>arr.indexOf(ele)!==i))].length
 }
+
