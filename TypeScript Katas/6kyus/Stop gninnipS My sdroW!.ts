@@ -8,14 +8,15 @@
 // "This is a test        --> "This is a test" 
 // "This is another test" --> "This is rehtona test"
 
-function spinWords(string){
+export function spinWords(words: string): string {
+  let arr:string[] = words.split(" ");
+  let newArr:string[] =[" "];
   
-let arr= string.split(" ");
-let newArray=[];
+  for(let i=0;i<arr.length;i++){
+    arr[i].length>=5?
+    newArr.push([...arr[i]].reverse().join("")):
+    newArr.push(arr[i])
+  }
   
- for(let i=0;i<arr.length;i++) {
-   arr[i].length>=5?newArray.push([...arr[i]].reverse().join("")):newArray.push(arr[i]);
- }
-  
-   return newArray.join(" ");
+  return newArr.join(" ").trim();
 }
