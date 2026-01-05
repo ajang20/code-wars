@@ -1,26 +1,3 @@
-//8 kyu simple calculator
-function calculator(a, b, sign) {
-  // Check if a and b are numbers
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    return 'unknown value';
-  }
-  
-  // Perform the operation based on the sign
-  switch (sign) {
-    case '+':
-      return a + b;
-    case '-':
-      return a - b;
-    case '*':
-      return a * b;
-    case '/':
-      return a / b;
-    case '%':
-      return a % b;
-    default:
-      return 'unknown value';
-  }
-}
 
 function* Names(){
     console.log("Program starts here");
@@ -134,12 +111,7 @@ function joinStrings(string1, string2){
    return`${string1} ${string2}`
 }
 
-// 8 kyu Calculate average
-// Write a function which calculates the average of the numbers in a given array.
-// Note: Empty arrays should return 0.
-function findAverage(array) {
-  return array.length>=1?array.reduce((acc,curr)=>acc+curr,0)/array.length:0;
-}
+
 
 // 8 kyu Do you speak "English"?
 // Given a string of arbitrary length with any ascii characters. Write a function to determine whether the string contains the whole word "English".
