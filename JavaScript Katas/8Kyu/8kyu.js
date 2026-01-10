@@ -553,28 +553,9 @@ function flickSwitch(arr){
   
 }
 
-// 8 kyu Plural
-// We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be used with that number or false if not. This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
-
-// You only need to worry about english grammar rules for this kata, where anything that isn't singular (one of something), it is plural (not one of something).
-
-// All values will be positive integers or floats, or zero.
-
-function plural(n) {
- return n!==1?true:false;
-}
 
 
-// 8 kyu Find the Difference in Age between Oldest and Youngest Family Members
-// At the annual family gathering, the family likes to find the oldest living family member’s age and the youngest family member’s age and calculate the difference between them.
 
-// You will be given an array of all the family members' ages, in any order. The ages will be given in whole numbers, so a baby of 5 months, will have an ascribed ‘age’ of 0. Return a new array (a tuple in Python) with [youngest age, oldest age, difference between the youngest and oldest age].
 
-function differenceInAges(ages){
-  let min =Math.min(...ages);
-  let max = Math.max(...ages);
-  let diff = max-min;
-  return [min,max,diff];
-}
 
 
