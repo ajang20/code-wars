@@ -436,39 +436,9 @@ function multiTable(number) {
   return result;
 }
 
-// 8 kyu The 'if' function
-// Create a function that takes three arguments:
 
-// a value to be evaluated for truthiness.
-// a function to execute if the first argument is truthy.
-// a function to execute if the first argument is falsy.
-// If the first argument evaluates to truthy, call the second argument (a function). If it evaluates to falsy, call the third argument instead (also a function).
 
-// Note: The first argument can be any value, since most languages allow any value to be interpreted as truthy or falsy. In strongly typed languages, however, it will typically be a boolean.
 
-function _if(bool, func1, func2) {
- return bool?func1():func2();
-}
-
-// 8 kyu Filter out the geese
-// Write a function that takes a list of strings as an argument and returns a filtered list containing the same elements but with the 'geese' removed.
-
-// The geese are any strings in the following array, which is pre-populated in your solution:
-
-//   ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
-// For example, if this array were passed as an argument:
-
-//  ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]
-// Your function would return the following array:
-
-// ["Mallard", "Hook Bill", "Crested", "Blue Swedish"]
-// The elements in the returned array should be in the same order as in the initial array passed to your function, albeit with the 'geese' removed. Note that all of the strings will be in the same case as those provided, and some elements may be repeated.
-
-function gooseFilter (birds) {
-  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-  let common= geese.includes(birds);
-  return birds.filter(ele=>!geese.includes(ele));
-  }
 
 
 
