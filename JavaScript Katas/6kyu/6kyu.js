@@ -110,33 +110,4 @@ return a.filter(ele=>!b.includes(ele));
 sd=x=>[...x+""].map(d=>d*d).join``*1
 
 
-// 6 kyu Sorted Arrays
-// Given any number of arrays each sorted in ascending order, find the nth smallest number of all their elements.
-
-// All the arguments except the last will be arrays, the last argument is n.
-
-// nthSmallest([1,5], [2], [4,8,9], 4) // returns 5 because it's the 4th smallest value
-// Be mindful of performance.
-
-function nthSmallest(...arr) {
-  let n= arr[arr.length-1];
-  let array= arr.slice(0,arr.length-1);
-  return array.flat(Infinity).sort((a,b)=>a-b)[n-1];
-  
-}
-
-// 6 kyu CamelCase Method
-// Write a method (or function, depending on the language) that converts a string to camelCase, that is, all words must have their first letter capitalized and spaces must be removed.
-
-// Examples (input --> output):
-// "hello case" --> "HelloCase"
-// "camel case word" --> "CamelCaseWord"
-// Don't forget to rate this kata! Thanks :)
-
-String.prototype.camelCase=function(a){
-  return this.split(" ").
-  map((ele)=>ele.charAt(0).
-  toUpperCase()+ele.slice(1)).
-  join("");
-}
 
