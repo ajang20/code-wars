@@ -8,8 +8,8 @@ Examples:
 * 'abcdef' => ['ab', 'cd', 'ef']
 
  */
-function solution(str) {
-  let newStr = str.length % 2 === 0 ? str : str + "_";
-  const pairs = newStr.match(/.{2}/g) || [];
-  return pairs;
+function solution(str){
+  let newStr=str.length%2===0?str:str+"_";
+const pairs= newStr.match(/.{2}/g) || []
+   return pairs;
 }
