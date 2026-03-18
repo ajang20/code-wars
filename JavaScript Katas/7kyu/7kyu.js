@@ -165,10 +165,7 @@ function capMe(names) {
 return names.map(ele=>ele[0].toUpperCase()+ele.slice(1).toLowerCase());
 }
 
-// 7 kyu Automorphic Number (Special Numbers Series #6)
-function automorphic(n){
-  return (n**2+"").endsWith((n+""))?"Automorphic":"Not!!";
-}
+
 
 
 
