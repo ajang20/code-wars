@@ -284,11 +284,7 @@ function addExtra( listOfNumbers ){
 function shortenToDate(longDate) {
 return longDate.split(" ").slice(0,3).join(" ").replace(/,/,"");
 }
-// 8 kyu Hex to Decimal
-// Complete the function which converts hex number (given as a string) to a decimal number.
-function hexToDec(hexString){
-return parseInt(hexString,16);
-  }
+
 
 
 
