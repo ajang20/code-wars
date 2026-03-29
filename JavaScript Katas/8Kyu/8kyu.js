@@ -205,30 +205,8 @@ function doubleInteger(i) {
   return i;
 }
 
-// 8 kyu Function 1 - hello world
-// Make a simple function called greet that returns the most-famous "hello world!".
-// Style Points
-// Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of? What is a "hello world" solution you would want to show your friends?
-function greet(){
-  return `hello world!`;
-}
 
-// 8 kyu Is the string uppercase?
-// Is the string uppercase?
-// Task
-// Create a method to see whether the string is ALL CAPS.
 
-// Examples (input -> output)
-// "c" -> False
-// "C" -> True
-// "hello I AM DONALD" -> False
-// "HELLO I AM DONALD" -> True
-// "ACSKLDFJSgSKLDFJSKLDFJ" -> False
-// "ACSKLDFJSGSKLDFJSKLDFJ" -> True
-// In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
-String.prototype.isUpperCase = function() {
-  return this.toString()===this.toUpperCase();
-}
 
 
 
