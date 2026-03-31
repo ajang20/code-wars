@@ -198,12 +198,6 @@ function mergeArrays(a, b) {
   return [...new Set(newArr)].sort((a,b)=>a-b);
 }
 
-// 8 kyu You Can't Code Under Pressure #1'
-// Code as fast as you can! You need to double the integer and return it.
-function doubleInteger(i) {
-  // i will be an integer. Double it and return it.
-  return i;
-}
 
 
 
