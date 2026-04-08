@@ -9,7 +9,7 @@
 // 48 --> '0
 // For ASCII table, you can refer to http://www.asciitable.com/
 
-export function getChar(c: number): string {
+export function getChar(c:number):string {
  return String.fromCharCode(c)
 }
 console.log(getChar(56))
