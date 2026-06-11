@@ -39,16 +39,19 @@
 
 //SOLUTION
 
-function goodVsEvil(good, evil){
-  const goodT = [1,2,3,3,4,10];
-  const badT = [1,2,2,2,3,5,10]
-  const goodSum = good.split(" ").reduce((sum,curr,i)=>sum+ curr*goodT[i],0);
-  const badSum = evil.split(" ").reduce((sum,curr,i)=>sum+curr*badT[i],0);
-  
-  return goodSum>badSum?
-         "Battle Result: Good triumphs over Evil":
-          badSum>goodSum?
-         "Battle Result: Evil eradicates all trace of Good":
-         "Battle Result: No victor on this battle field";
+function goodVsEvil(good, evil) {
+  const goodT = [1, 2, 3, 3, 4, 10];
+  const badT = [1, 2, 2, 2, 3, 5, 10];
+  const goodSum = good
+    .split(" ")
+    .reduce((sum, curr, i) => sum + curr * goodT[i], 0);
+  const badSum = evil
+    .split(" ")
+    .reduce((sum, curr, i) => sum + curr * badT[i], 0);
 
+  return goodSum > badSum
+    ? "Battle Result: Good triumphs over Evil"
+    : badSum > goodSum
+      ? "Battle Result: Evil eradicates all trace of Good"
+      : "Battle Result: No victor on this battle field";
 }
