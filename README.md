@@ -1,6 +1,6 @@
 # ⚔️ Codewars Daily Katas
 
-Sharpening my JavaScript & TypeScript skills one kata at a time.
+Sharpening my JavaScript & TypeScript & Python skills one kata at a time.
 
 ---
 
@@ -13,7 +13,7 @@ This repo tracks my daily Codewars practice. No fluff — just consistent reps t
 ## Why daily katas?
 
 - Build problem-solving muscle memory
-- Get comfortable with JS & TS patterns
+- Get comfortable with JS & TS & Python patterns
 - Write cleaner, more concise code over time
 - Because consistency beats motivation
 
