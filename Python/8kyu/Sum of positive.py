@@ -17,8 +17,8 @@
 # If there is nothing to sum, the sum is default to 0.
 
 def positive_sum(arr):
-    sum = 0
+    total = 0
     for i in arr:
         if i > 0 :
-            sum += i    
-    return sum
+            total += i    
+    return total
