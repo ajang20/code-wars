@@ -1,21 +1,21 @@
-// # 7 kyu Sum of all arguments
+//  7 kyu Sum of all arguments
 
-// # Description:
-// # Write a function that finds the sum of all its arguments.
+//  Description:
+//  Write a function that finds the sum of all its arguments.
 
-// # eg:
+//  eg:
 
-// # sum(1, 2, 3) // => 6
-// # sum(8, 2) // => 10
-// # sum(1, 2, 3, 4, 5) // => 15
-// # TIPS:
-// # ruby/python : http://lmgtfy.com/?q=Ruby+splat+operator
+//  sum(1, 2, 3) // => 6
+//  sum(8, 2) // => 10
+// sum(1, 2, 3, 4, 5) // => 15
+// TIPS:
+// ruby/python : http://lmgtfy.com/?q=Ruby+splat+operator
 
-// # JS/Coffeescript : http://lmgtfy.com/?q=Javascript+arguments+variable
+// JS/Coffeescript : http://lmgtfy.com/?q=Javascript+arguments+variable
 
-// # C: https://www.geeksforgeeks.org/variadic-functions-in-c/
+// C: https://www.geeksforgeeks.org/variadic-functions-in-c/
 
-// # Fundamentals
+// Fundamentals
 
 function sum(...args) {
   let sum = 0 
